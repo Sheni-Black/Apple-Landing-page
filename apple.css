@@ -1,0 +1,454 @@
+@font-face {
+    font-family: "Sf-Pro-Text";
+    src: url("SF-Pro-Text-Light.otf");
+}
+
+@font-face {
+    font-family: "Sf-Pro-Text-bold";
+    src: url("SF-Pro-Text-Bold.otf");
+}
+
+@font-face {
+    font-family: "Sf-Pro-Text-Medium";
+    src: url("SF-Pro-Text-Medium.otf");
+}
+
+@font-face {
+    font-family: "Sf-Pro-Text-Thin";
+    src: url("SF-Pro-Text-Light.otf");
+}
+
+:root{
+    --border: 1px solid red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sf-Pro-Text";
+}
+
+.header{
+    width: 100%;
+    height: auto;
+}
+
+.nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7rem;
+    padding-block: 1rem;
+    background-color: rgba( 0, 0, 0, 0.7);
+    color:  rgba( 255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: rgba( 255, 255, 255, 0.8);
+    font-size: 0.8rem;
+}
+
+.nav .dehaze{
+    display: none;
+   }
+
+.hero{
+    width: 100%;
+    height:auto;
+    padding-top: 5.5rem;
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.hero-content{
+    min-height: clamp(40vh, 60vh, 100vh);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-image: url(Images/hero_iphone_17_pro__bknyzxfk2agi_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h1{
+    font-size: clamp(2.5rem, 3.5vw + 1rem, 3.5rem);
+    color: white;
+    margin-bottom: 0.5rem;
+    font-family: "Sf-Pro-Text-bold";
+}
+
+.hero-content p{
+    font-size: clamp(1rem, 1.8vw + 0.4rem, 1.8rem);
+    color: white;
+    margin-bottom: 1rem;
+    font-family: "Sf-Pro-Text-Medium";
+}
+
+.hero-content a{
+    text-decoration: none;
+    display: inline-block;
+    padding-inline: clamp(0.5rem, 2.3vw, 1.5rem);
+    padding-block: clamp(0.5rem, 1.2vw, 0.8rem);;
+    background-color: #0071e3;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.iPhone-air{
+    width: 100%;
+    height:auto;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+    background-color: #f5f5f7;
+}
+
+.iPhone-air-content{
+    min-height: clamp(40vh, 60vh, 100vh);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-image: url(Images/hero_iphone_air__0gxyavihpiqu_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.iPhone-air-content h1{
+    font-size: clamp(2.5rem, 3.5vw + 1rem, 3.5rem);
+    color: #000000;
+    margin-bottom: 0.5rem;
+    font-family: "Sf-Pro-Text-Medium";
+}
+
+.iPhone-air-content p{
+    font-size: clamp(1rem, 1.8vw + 0.4rem, 1.8rem);
+    color: #000000;
+    margin-bottom: 1rem;
+    font-family: "Sf-Pro-Text-Thin";
+}
+
+.iPhone-air-content a{
+    text-decoration: none;
+    display: inline-block;
+    padding-inline: clamp(0.5rem, 2.3vw, 1.5rem);
+    padding-block: clamp(0.5rem, 1.2vw, 0.8rem);;
+    background-color: #0071e3;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.iPhone-17{
+    width: 100%;
+    height:auto;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+    background-color: #f5f5f7;
+}
+
+.iPhone-17-content{
+    min-height: clamp(40vh, 60vh, 100vh);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-image: url(Images/hero_iphone_17__c5vvimu9a20y_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.iPhone-17-content h1{
+    font-size: clamp(2rem, 3vw + 0.5rem, 3rem);
+    color: #000000;
+    margin-bottom: 0.5rem;
+    font-family: "Sf-Pro-Text-Medium";
+}
+
+.iPhone-17-content p{
+    font-size: clamp(1rem, 1.8vw + 0.4rem, 1.8rem);
+    color: #000000;
+    margin-bottom: 1rem;
+    font-family: "Sf-Pro-Text-Thin";
+}
+
+.iPhone-17-content a{
+    text-decoration: none;
+    display: inline-block;
+    padding-inline: clamp(0.5rem, 2.3vw, 1.5rem);
+    padding-block: clamp(0.5rem, 1.2vw, 0.8rem);;
+    background-color: #0071e3;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.wide-screens{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.macpad{
+    width: 100%;
+    display: grid;
+    padding-inline: 1rem;
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+.mac-pad{
+    height: clamp(55vh, 65vh, 75vh);
+}
+
+.macbook-pro{
+    text-align: center;
+    background-image: url(Images/promo_macbook_pro_m5__gnwzdhijhm6a_medium.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.macbook-pro h1{
+    font-size: clamp(1.3rem, 1.7rem + 2vw, 2.3rem);
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-family: "Sf-Pro-Text-Medium";
+    padding-top: 3rem;
+}
+
+.macbook-pro p{
+    font-size: clamp(1rem, 1.2rem, 1.5rem);
+    color: #fff;
+    margin-bottom: 1rem;
+    font-family: "Sf-Pro-Text-Thin";
+    font-weight: 600;
+}
+
+.macbook-pro a{
+    text-decoration: none;
+    display: inline-block;
+    padding-inline: clamp(0.5rem, 2.3vw, 1.5rem);
+    padding-block: clamp(0.5rem, 1.2vw, 0.8rem);
+    background-color: #0071e3;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.ipad-pro{
+    text-align: center;
+    background-image: url(Images/promo_ipad_pro__c529dk533k4m_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ipad-pro h1{
+    font-size: clamp(1.3rem, 1.7rem + 2vw, 2.3rem);
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-family: "Sf-Pro-Text-Medium";
+    padding-top: 3rem;
+}
+
+.ipad-pro p{
+    font-size: clamp(1rem, 1.2rem, 1.5rem);
+    color: #fff;
+    margin-bottom: 1rem;
+    font-family: "Sf-Pro-Text-Thin";
+    font-weight: 600;
+}
+
+.ipad-pro a{
+    text-decoration: none;
+    display: inline-block;
+    padding-inline: clamp(0.5rem, 2.3vw, 1.5rem);
+    padding-block: clamp(0.5rem, 1.2vw, 0.8rem);
+    background-color: #0071e3;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.ipad{
+    text-align: center;
+    background-image: url(Images/promo_ipad__fioegapg12qi_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ipad h1{
+    font-size: clamp(1.3rem, 1.7rem + 2vw, 2.3rem);
+    color: #000;
+    margin-bottom: 0.5rem;
+    font-family: "Sf-Pro-Text-Medium";
+    padding-top: 3rem;
+}
+
+.ipad p{
+    font-size: clamp(1rem, 1.2rem, 1.5rem);
+    color: #000;
+    margin-bottom: 1rem;
+    font-family: "Sf-Pro-Text-Thin";
+    font-weight: 600;
+}
+
+.ipad a{
+    text-decoration: none;
+    display: inline-block;
+    padding-inline: clamp(0.5rem, 2.3vw, 1.5rem);
+    padding-block: clamp(0.5rem, 1.2vw, 0.8rem);
+    background-color: #0071e3;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.macbook-air{
+    text-align: center;
+    background-image: url(Images/promo_macbook_air__fqowrtnxewqe_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.macbook-air h1{
+    font-size: clamp(1.3rem, 1.7rem + 2vw, 2.3rem);
+    color: #000;
+    margin-bottom: 0.5rem;
+    font-family: "Sf-Pro-Text-Medium";
+    padding-top: 3rem;
+}
+
+.macbook-air p{
+    font-size: clamp(1rem, 1.2rem, 1.5rem);
+    color: #000;
+    margin-bottom: 1rem;
+    font-family: "Sf-Pro-Text-Thin";
+    font-weight: 600;
+}
+
+.macbook-air a{
+    text-decoration: none;
+    display: inline-block;
+    padding-inline: clamp(0.5rem, 2.3vw, 1.5rem);
+    padding-block: clamp(0.5rem, 1.2vw, 0.8rem);
+    background-color: #0071e3;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+footer{
+    padding-inline: 1rem;
+    padding-bottom: 2rem;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(5rem, 7rem, 10rem);
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footer p{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgba( 0, 0, 0, 0.7);
+    font-size: 0.8rem;
+}
+
+
+@media (min-width:1100px) {
+    .hero-content{
+        min-height: 83vh
+    }
+
+    .iPhone-17-content{
+        min-height: 83vh;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .iPhone-air-content{
+        min-height: 83vh;
+    }
+
+    .mac-pad{
+        height: clamp(80vh, 90vh, 100vh);
+    }
+}
+
+@media (max-width: 950px) {
+    .nav{
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding-inline: 1rem;
+    }
+
+   .nav-link{
+    display: none;
+   } 
+
+   [class*="glass"]{
+    align-self: center;
+   }
+
+   .fa-apple{
+    margin-right: auto;
+    align-self: center;
+   }
+
+   .nav .dehaze{
+    display: block;
+   }
+}
+
+@media (min-width:730px) and (max-width:1000px) {
+    .mac-pad{
+        height: clamp(30vh, 40vh, 50vh);
+    }
+}
+
+@media (max-width: 720px){
+    .hero-content{
+        min-height: clamp(40vh, 63vh, 80vh);
+        width: 100%;
+        background-image: url(Images/hero_iphone_17_pro__bknyzxfk2agi_small_2x.jpg);
+        background-size: 47rem;
+        background-position:  center;
+        background-repeat: no-repeat;
+    }
+
+    .iPhone-air-content{
+        min-height: clamp(40vh, 60vh, 80vh);
+        width: 100%;
+        background-image: url(Images/hero_iphone_air__0gxyavihpiqu_small_2x.jpg);
+        background-size: 47rem;
+        background-position:  center;
+    }
+
+    .iPhone-17-content{
+        min-height: clamp(40vh, 60vh, 80vh);
+        width: 100%;
+        background-image: url(Images/hero_iphone_17__c5vvimu9a20y_small.jpg);
+        background-size: 47rem;
+        background-position:  center;
+        background-repeat: no-repeat;
+    }
+
+    .macpad{
+        grid-template-columns: repeat(1, minmax(320px, 1fr));
+        padding-inline: 0;
+    }
+}
