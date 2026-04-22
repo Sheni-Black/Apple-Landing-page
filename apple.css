@@ -46,6 +46,7 @@
     color:  rgba( 255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     position: fixed;
+    z-index: 1000;
 }
 
 .nav-link a{
@@ -365,6 +366,18 @@ footer{
     text-decoration: none;
     color: rgba( 0, 0, 0, 0.7);
     font-size: 0.8rem;
+}
+
+.scroll{
+    transform: translateY(100px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.cards{
+    transform: translateY(0);
+    transition: all 0.5s;
+    opacity: 1;
 }
 
 
